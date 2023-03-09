@@ -19,5 +19,6 @@ elements.forEach(el => {
 
 btn.addEventListener('click', () => {
     const newEl = el.cloneNode(true);
+    el.insertAdjacentElement('afterend', newEl);
     setInterval(() => mover(newEl), interval);
 });
