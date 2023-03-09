@@ -18,8 +18,9 @@ body {
     color: rgb(242, 237, 244);
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: sans-serif;
+    z-index: 999;
 }
 
 #add {
@@ -33,6 +34,8 @@ h1 {
     width: 2rem;
     line-height: 2rem;
     border: none;
+    cursor: pointer;
+    z-index: 999;
 }
 
 .move {
@@ -49,5 +52,7 @@ h1 {
     justify-items: center;
     justify-content: center;
     white-space: nowrap;
+    pointer-events: none;
+    will-change: top, left;
     transition: all 200ms ease-in-out;
 }
