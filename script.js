@@ -1,10 +1,15 @@
-const el = document.getElementById('move');
+const elements = document.getElementsByClassName('move');
 
 console.log('timer start');
-setInterval(() => {
+elements.forEach(el => {
+    setInterval(() => {
 
-    el.style.top = `${Math.random() * window.innerHeight}px`;
-    el.style.left = `${Math.random() * window.innerWidth}px`;
-    el.style.rotate = `${Math.random() * 360}deg`;
+        const r = Math.random;
 
-}, 250);
+        el.style.top = `${r() * window.innerHeight}px`;
+        el.style.left = `${r() * window.innerWidth}px`;
+        el.style.rotate = `${r() * 360}deg`;
+        el.style.backgroundColor = `hsl(${r() * 360}deg 255 255)`;
+    
+    }, 500);
+});
