@@ -23,7 +23,7 @@ h1 {
 }
 
 #move {
-    position: fixed;
+    position: absolute;
     padding: 5px;
     min-width: 20px;
     height: 20px;
