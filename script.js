@@ -8,4 +8,4 @@ setInterval(() => {
     el.style.left = `${Math.random() * window.innerWidth}px`;
     el.style.rotate = `${Math.random() * 360}deg`;
 
-}, 10);
+}, 200);
