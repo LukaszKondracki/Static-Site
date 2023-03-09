@@ -1,6 +1,5 @@
 const el = document.getElementById('move');
 
-
 console.log('timer start');
 setInterval(() => {
 

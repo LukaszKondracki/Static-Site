@@ -23,12 +23,17 @@ h1 {
 }
 
 #move {
-    position: absolute;
+    position: fixed;
     padding: 5px;
     min-width: 20px;
     height: 20px;
     border-radius: 15px;
     background-color: red;
     color: white;
-    transition: all 200ms ease-in-out
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in-out;
 }
