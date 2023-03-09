@@ -1,7 +1,7 @@
 const el = document.getElementById('move');
 
 
-console.log('timer start')''
+console.log('timer start');
 setInterval(() => {
 
     el.style.top = Math.random() * window.innerHeight;
