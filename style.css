@@ -22,7 +22,7 @@ h1 {
     font-family: sans-serif;
 }
 
-#move {
+.move {
     position: fixed;
     padding: 5px;
     min-width: 20px;
