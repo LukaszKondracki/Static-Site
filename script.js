@@ -2,13 +2,14 @@ const elements = document.querySelectorAll('.move');
 const btn = document.getElementById('add');
 
 const r = Math.random;
+const [w, h] = [window.innerWidth, window.innerHeight]
+
 const mover = (el) => {
-
-    el.style.top = `${r() * window.innerHeight}px`;
-    el.style.left = `${r() * window.innerWidth}px`;
-    el.style.rotate = `${r() * 360}deg`;
+    el.style.transform = `
+        translate(${r() * w}px, ${r() * h}px) 
+        rotate(${r() * 360}deg)
+        scale(${r() + 0.5})`;
     el.style.backgroundColor = `hsl(${r() * 360}, 100%, 50%)`;
-
 };
 const interval = 500;
 
