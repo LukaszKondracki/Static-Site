@@ -12,13 +12,19 @@ const mover = (el) => {
 };
 const interval = 500;
 
-console.log('timer start');
-elements.forEach(el => {
-    setInterval(() => mover(el), interval);
-});
+let handler = 0;
+const run = () => {
+    clearInterval(handler);
+    const elements = document.querySelectorAll('.move');
+    handler = setInterval(() => {
+        elements.forEach(mover);
+    }, interval);
+}
 
 btn.addEventListener('click', () => {
     const newEl = elements[0].cloneNode(true);
     elements[0].insertAdjacentElement('afterend', newEl);
-    setInterval(() => mover(newEl), interval);
+    run();
 });
+
+run();
