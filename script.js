@@ -9,7 +9,7 @@ elements.forEach(el => {
         el.style.top = `${r() * window.innerHeight}px`;
         el.style.left = `${r() * window.innerWidth}px`;
         el.style.rotate = `${r() * 360}deg`;
-        el.style.backgroundColor = `hsl(${r() * 360}, 100%, 100%)`;
+        el.style.backgroundColor = `hsl(${r() * 360}, 100%, 50%)`;
     
     }, 500);
 });
