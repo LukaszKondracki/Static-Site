@@ -21,9 +21,18 @@ const run = () => {
     }, interval);
 }
 
+const numLabel = document.createElement('span');
+numLabel.innerText = '+1';
+numLabel.classList.add('num-label');
+const showNum = () => {
+    const lbl = numLabel.cloneNode(true);
+    btn.prepend(lbl);
+    setTimeout(() => lbl.remove(), 1000);
+};
 btn.addEventListener('click', () => {
     const newEl = elements[0].cloneNode(true);
     elements[0].insertAdjacentElement('afterend', newEl);
+    showNum();
     run();
 });
 

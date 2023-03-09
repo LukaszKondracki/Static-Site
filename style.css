@@ -56,3 +56,25 @@ h1, h2, h3, h4, h5 {
     will-change: top, left;
     transition: all 200ms ease-in-out;
 }
+
+.num-label {
+    animation: fade-slide 1000ms ease-in-out forwards;
+    position: absolute;
+    width: 2rem;
+    text-align: center;
+    right: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: -1;
+}
+
+@keyframes fade-slide {
+    from {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+    to {
+        transform: translateY(-50vh);
+        opacity: 0%;
+    }
+}
