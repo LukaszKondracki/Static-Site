@@ -1,4 +1,4 @@
-const elements = document.getElementsByClassName('move');
+const elements = document.querySelectorAll('.move');
 
 console.log('timer start');
 elements.forEach(el => {
